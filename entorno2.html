@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+  <head>
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENTORNO</title>
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	  
+	<style>
+* {box-sizing: border-box}
+ body {
+       margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 40; /* Regular por defecto */
+    }
+		.titulo {
+  font-family: 'Playfair Display', serif;
+}
+		 h1 {
+      font-weight: 30; /* Poppins Bold */
+      font-size: 3vw;    /* Responsive font size */
+      text-align: center;
+			  margin-top: 2rem;
+    }
+    }
+		  h2 {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+			.subti{
+		font-family: 'Dancing Script', cursive;
+			 font-weight: 30; /* Poppins Bold */
+      font-size: 3vw;    /* Responsive font size */
+			  margin-top: 2rem;
+		}
+  p {
+      font-size: 1rem;
+      margin: 1rem 2rem;
+      line-height: 1.6;
+    }
+	 @media (max-width: 600px) {
+      h1 {
+        font-size: 8vw;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 60px;
+      }
+    }	
+ header {
+      background-color: #FCE04E;
+        text-align: center;
+      padding: 10px 30px;
+      font-weight: bold;
+	   display: flex;
+      align-items: center;      /* Alinea logo, línea y título verticalmente */
+      gap: 26px;                /* Espacio entre elementos */
+      font-size: 24px;
+	  width: 100%;
+      justify-content: center; 
+    }
+    header img {
+		height: 30px;}
+
+    /* Línea vertical separadora */
+    .separador {
+      border-left: 2px solid #333;
+      height: 1em;              /* Coincide con la altura del texto */
+    }
+	
+		  nav {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+        margin-top: 5px;
+    }
+    nav a {
+      background-color: #A4DAD4;
+      color: black;
+      font-weight: bold;
+      padding: 10px 25px;
+      margin: 0 10px;
+      border-radius: 15px;
+      text-decoration: none;
+    }
+		 .retos-bar {
+      background-color: #EA7B30;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+        margin-top:5px;
+			 width: 100%;
+    }
+		 footer {
+      background-color: #A4DAD4;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    footer img {
+      height: 25px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+/*Tipografia*/
+		
+	
+		
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 500px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 500px;
+	overflow: scroll;
+}
+		
+	div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+	a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+	border-radius: 15px;		
+}
+
+a:hover {
+  background-color: #A4DAD4;
+  color: black;
+	font-weight: bold;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #DE3C7F;
+  color: white;
+}
+.caja {
+  position: relative;
+  display: inline-block;
+}
+
+.caja img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caja .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #DE3C7F;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+  pointer-events: none;
+}
+</style>
+  </head>
+  <body>
+	 
+	 <header>
+		 <img src="images/bougainvillea (1).png" alt="Logo" class="logo">
+      <div class="separador"></div> 
+		 POLINIZADORES Y SU IMPORTANCIA EN LA NATURALEZA
+  </header>
+		 
+  <nav>
+
+    <a href="index.html">INICIO</a>
+    <a href="especies.html">ESPECIES</a>
+    <a href="Retos.html">RETOS</a>
+	
+      
+  </nav>
+
+	  	<main><div class="retos-bar">
+			ENTORNO
+	  
+			</div>
+	  <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+  <br>
+		  <br>
+	<section>
+	<p>Los polinizadores son cruciales en las zonas urbanas para la supervivencia de muchas plantas, la producción de alimentos y la biodiversidad. Su labor de polinización es vital para la reproducción de plantas con flores, tanto silvestres como cultivadas, incluyendo frutas, verduras y semillas. Además, ayudan a mantener la salud de los ecosistemas urbanos y a enriquecer la diversidad de plantas en las ciudades.  </p>
+		<p>Los polinizadores también son importantes para la conservación de plantas silvestres y para la reproducción de especies nativas en los espacios urbanos. </p>
+		
+	  </section>
+		</div>
+	<div class="row">
+	 <div class="col-8" style="margin: auto">
+				 
+				  <hr>
+				  
+	</div>
+	</div>
+		 
+	<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+		<section> 
+			
+		<section> 
+			<h2 class="subti"> Entornos Urbanos</h2>
+			<h3>México</h3>
+		</section> 
+		
+	  <section>
+	<div class="tab">
+		  
+			<button class="tablinks" onclick="openCity(event, 'bt')" id="defaultOpen">Jardines y Parques</button>
+			<button class="tablinks" onclick="openCity(event, 'sh')">Huertos e Invernaderos</button>
+			<button class="tablinks" onclick="openCity(event, 'd')">Zonas con Vegetación nativa</button>
+	  </div>
+		
+	<div id="bt" class="tabcontent" >
+		  
+			  <h3>Jardines y Parques</h3>
+		  <p>Los parques y jardines son espacios diseñados para el esparcimiento y recreación. Se distinguen por su vegetación, incluyendo árboles, césped y plantas ornamentales, así como por elementos de diseño como senderos, bancos y áreas de juegos. </p>
+		<p>Gracias a la gran biodiversidad que existe en nuestro país, México cuenta con famosos jardines, ideales para visitar el fin de semana, relajarse y contemplar la belleza de la naturaleza. Además, algunos de estos jardines son botánicos, lo cuales están destinados al estudio, conservación y divulgación de la diversidad de las especies vegetales, en especial las especies endémicas de México.
+		</p>
+		<p>Uno de los jardines más famosos es Jardines de México, ubicado en Jojutla, Morelos. Este es el jardín floral más grande del mundo, con 37 hectáreas de jardines temáticos: el Abanico de Flores, Jardín Cuatro Primaveras, el Italiano, el Japonés, el de Cactáceas, el Tropical y el Laberinto de los Sentidos. Este jardín alberga más de 500 especies de plantas endémicas y cuenta con servicios como un área para niños, un foro al aire libre, así como un centro de negocios y exposiciones para dos mil personas.</p>
+		<div style="margin: auto">
+		  <a href="https://www.admagazine.com/lugares/los-jardines-mas-famosos-de-mexico-20200812-7265-articulos" target="_blank"><img src="images/NNNNN.jpg" width="70%"  alt=""/></a>
+			<p><i>El Universal</i></p>
+		<p>Si tienes jardín o macetas, siembra flores nativas que florezcan en diferentes épocas del año, esto permitirá que los polinizadores tengan una fuente de alimentos estable. Coloca un hotel para polinizadores, éstos funcionan como refugio para insectos y animales. Los jardines y corredores polinizadores son espacios cuyas plantas y árboles capturan los gases que provocan el calentamiento global. De igual forma son áreas verdes que ayudan a regular la temperatura al reducir el calor, y cuyo suelo y vegetación retiene e infiltra el agua, previniendo inundaciones.</p>
+			 <a href="https://www.biodiversidad.gob.mx/ecosistemas/procesose/polinizacion/jardin-de-polinizadores" target="_blank"><img src="images/4b7e0851fe811003492d6371fc49616b.jpg"   alt=""/></a>
+			<p><i>ECOGARDEN</i></p>
+		</div>
+	
+	 </div>
+
+	<div id="sh" class="tabcontent">
+		  <h3>Huertos e Invernaderos</h3>
+		  <p>En México, tanto los huertos como los invernaderos son espacios de cultivo, pero con diferencias clave. Los huertos, a menudo de traspatio o urbanos, son áreas al aire libre donde se cultivan plantas, principalmente vegetales, para consumo propio o comunitario. Los invernaderos, por otro lado, son estructuras cerradas que permiten controlar factores ambientales como temperatura y humedad, facilitando el cultivo de plantas en condiciones óptimas. </p>
+		<p>Los huertos urbanos se han vuelto cada vez más populares en México, especialmente en las ciudades, donde se han convertido en una herramienta para la producción de alimentos, la educación y la conexión con la naturaleza. Su popularidad ha crecido en los últimos años, impulsada por movimientos ecologistas y la búsqueda de opciones de alimentación más saludables y sostenibles. </p>
+			<a href="https://www.sedema.cdmx.gob.mx/storage/app/media/GuiaHuertosUrbanosFamiliares.pdf" target="_blank"><img src="images/huerto.jpg" width="70%"   alt=""/></a>
+		<p><i>Sedema-CDMX</i></p>
+			<p></p>
+	</div>
+	
+	 <div id="d" class="tabcontent">
+		  <h3>Zonas con Vegetación Nativa</h3>
+		  <p>Una zona de vegetación nativa en áreas urbanas se refiere a áreas donde se encuentra vegetación que es original del lugar, es decir, especies que han evolucionado naturalmente en ese entorno y no han sido introducidas por el hombre. Son ecosistemas donde la comunidad biológica incluye poblaciones humanas densas junto con infraestructura ampliamente desarrollada (calles, casas, edificios, calles, drenajes, etc.) que han desplazado a las comunidades y ecosistemas preexistentes. En los ecosistemas urbanos la composición y estructura del paisaje está regida por decisiones de los seres humanos.</p>
+		 <p>En los ecosistemas urbanos existen áreas naturales protegidas (ANP), las cuales cumplen diversas funciones, entre ellas, la regulación del clima y refugio para las especies propias de las zonas. De forma general, las zonas metropolitanas en el país comparten territorio con cerca de 35 áreas naturales protegidas.
+
+		<p>Además de las áreas naturales protegidas federales, en las ciudades puede haber otras zonas importantes para la naturaleza como áreas protegidas estatales, municipales y bosques y parques urbanos.</p>
+
+		<p>En la Ciudad de México, por ejemplo, hay 17 áreas naturales protegidas entre las que podemos encontrar varios tipos categorías como Cumbres del Ajusco, Desierto de los Leones, Cerro de la Estrella, Fuentes Brotantes y el parque urbano Bosque de Tlalpan, el Bosque de Chapultepec, el Bosque de San Juan de Aragón, los Viveros de Coyoacán, la Reserva Ecológica del Pedregal de San Ángel, entre otros.</p>
+			
+		  <a href="https://www.biodiversidad.gob.mx/ecosistemas/ecosismex/urbanos" target="_blank"><img src="images/Desierto_leones_cdmx.jpg"  alt=""/></a>
+		  <p><i>Biodiversidad Mexicana</i></p>
+	 </div>
+	</section>	  
+	</div>
+		
+	
+	
+			<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();			
+					
+</script>
+	  
+	  
+	  <div style="height: 30px;"></div>
+		
+	   
+	<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+		<section>
+		<p>.</p>
+		<h3>Galería de polinizadores en entornos urbanos</h3>
+		<p>En zonas urbanas de México, la presencia de polinizadores se ve afectada por la urbanización, pero aún existen especies que contribuyen a la polinización, incluyendo insectos como abejas, mariposas, avispas y hormigas, además de aves como colibríes y murciélagos.</p>
+		  </section>
+			
+		  <section>
+<div class="scroll-container">
+  <img src="images/polilla.jpg" alt="Cinque Terre" width="600" height="400" >
+  <img src="images/abejas-urbanas-enfrentan-deficit-de-flores-26737.jpg" alt="Forest" width="600" height="400" >
+  <img src="images/406035930318897152.webp" alt="Northern Lights" width="600" height="400" >
+  <img src="images/304012441-1900px.jpg" alt="Mountains"width="600" height="400">
+	
+	<img src="images/JKMVZYNKG5A2JHELSSESJXFMSE.jpg" alt="Cinque Terre" width="600" height="400" >
+  <img src="images/que-significa-ver-muchas-mariposas-cdmx-otros-estados-por-que-hay-tantas-septiembre-2024.jpg" alt="Forest" width="600" height="400" >
+	
+</div>
+
+<p><i>Fuente:Nathional Geographic, Agraria.p, Infobabe, Celebrate Urban Birds, N+, Picture Insect.  </i></p>
+		  </section>
+		
+	  </div>
+	  
+	  <div class="col-sm-8 col-md-4 col-lg-4 col-xl-4" style="margin: auto">
+	  <section>
+		  <a href="index.html" class="previous">&laquo; Inicio</a>
+<a href="entorno.html" class="next">Natural &raquo;</a>
+		  </section>
+	  </div>
+	  
+	</main>
+	<br>
+	  
+
+  <footer>
+    <a href="index.html" target="_blank"><img src="images/bougainvillea (1).png" alt="Logo" /></a>
+	   <a href="https://www.youtube.com/@biodiversidadmexico" target="_blank"><img src="https://img.icons8.com/ios-filled/50/youtube-play.png"   alt="youtube"/></a>
+   	   <a href="https://www.facebook.com/Semarnatmx" target="_blank"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png"   alt="Facebook"/></a>
+	   <a href="https://www.instagram.com/refugio.bees/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/instagram-new.png"   alt="Instagram"/></a>
+
+  </footer>
+
+</body>
+</html>

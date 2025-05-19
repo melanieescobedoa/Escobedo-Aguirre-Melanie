@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+<head>
+<meta charset="utf-8">
+<title>AVES</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	   	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENTORNO</title>
+	  
+	<style>
+* {box-sizing: border-box}
+ body {
+       margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 40; /* Regular por defecto */
+    }
+		.titulo {
+  font-family: 'Playfair Display', serif;
+			
+}
+		 h1 {
+      font-weight: 30; /* Poppins Bold */
+      font-size: 3vw;    /* Responsive font size */
+      text-align: center;
+			  margin-top: 2rem;
+    }
+    }
+		  h2 {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+		.subti{
+		font-family: 'Dancing Script', cursive;	
+			 font-weight: 30; /* Poppins Bold */
+      font-size: 3vw;    /* Responsive font size */
+			  margin-top: 2rem;
+		}
+  p {
+      font-size: 1rem;
+      margin: 1rem 2rem;
+      line-height: 1.6;
+    }
+	 @media (max-width: 600px) {
+      h1 {
+        font-size: 8vw;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 60px;
+      }
+    }	
+ header {
+      background-color: #FCE04E;
+        text-align: center;
+      padding: 10px 30px;
+      font-weight: bold;
+	   display: flex;
+      align-items: center;      /* Alinea logo, línea y título verticalmente */
+      gap: 26px;                /* Espacio entre elementos */
+      font-size: 24px;
+	  width: 100%;
+      justify-content: center; 
+    }
+    header img {
+		height: 30px;}
+
+    /* Línea vertical separadora */
+    .separador {
+      border-left: 2px solid #333;
+      height: 1em;              /* Coincide con la altura del texto */
+    }
+	
+		  nav {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+        margin-top: 5px;
+    }
+    nav a {
+      background-color: #A4DAD4;
+      color: black;
+      font-weight: bold;
+      padding: 10px 25px;
+      margin: 0 10px;
+      border-radius: 15px;
+      text-decoration: none;
+    }
+		 .retos-bar {
+      background-color: #EA7B30;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+        margin-top:5px;
+			 width: 100%;
+    }
+		 footer {
+      background-color: #A4DAD4;
+      text-align: center;
+      padding: 20px 10px;
+    }
+    footer img {
+      height: 25px;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+/*Tipografia*/
+		
+	
+		
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 500px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 500px;
+	overflow: scroll;
+}
+		
+	div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+		
+		a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+	border-radius: 15px;		
+}
+
+a:hover {
+  background-color: #A4DAD4;
+  color: black;
+	font-weight: bold;
+}
+	 
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #DE3C7F;
+  color: white;
+}
+
+</style>
+  
+  <body>
+	 <header> 
+    <img src="images/bougainvillea (1).png" alt="Logo" class="logo">
+      <div class="separador"></div> 
+		 POLINIZADORES Y SU IMPORTANCIA EN LA NATURALEZA
+  </header>
+		 
+  <nav>
+    <a href="index.html">INICIO</a>
+    <a href="especies.html">ESPECIES</a>
+    <a href="Retos.html">RETOS</a>
+</nav>
+	  	<main><div class="retos-bar">
+			ENTORNO
+	  
+			</div>
+	  <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+  <br>
+		  <br>
+	<section>
+	<p>Los entornos de polinización son los lugares y las condiciones que favorecen la transferencia de polen entre las flores, permitiendo la reproducción y la formación de frutos y semillas. Estos entornos pueden ser naturales, como bosques y praderas, o pueden ser creados por el hombre, como jardines de polinizadores y zonas urbanas con espacios verdes. </p>
+		<p>Los polinizadores son esenciales en nuestro ambiente ya que son los animales que transportan el polen de una flor a otra, ayudando en su reproducción a más del 80% de las plantas con flores del mundo.</p>
+
+	<p>Todos nos alimentamos gracias a los polinizadores. En México, el 88% de las 145 especies cuyo fruto o semilla cultivamos y comemos como el chile, mango, calabaza, frijol o jitomate, dependen de los polinizadores para su producción. Y a nivel mundial, el 80% de los cultivos de los que obtenemos alimentos, bebidas, medicinas, tintas y fibras, dependen también de los polinizadores.</p>
+		<p>Si los polinizadores de entornos naturales en México desaparecieran, tendríamos consecuencias severas en la producción de alimentos, la biodiversidad, y los ecosistemas. La falta de polinización natural podría reducir significativamente el rendimiento de los cultivos, afectando la seguridad alimentaria y la economía. Además, la pérdida de polinizadores amenazaría la supervivencia de muchas especies de plantas y animales, desestabilizando los ecosistemas. </p>
+	  </section>
+		</div>
+	<div class="row">
+	 <div class="col-8" style="margin: auto">
+				 
+				  <hr>
+				  
+	</div>
+	</div>
+		 
+	<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+		<section> 
+			<h2 class="subti"> Entornos Naturales</h2>
+			<h3>México</h3>
+		</section> 
+		<section>
+	<div class="tab">
+		  
+			<button class="tablinks" onclick="openCity(event, 'bt')" id="defaultOpen">Bosques Templados</button>
+			<button class="tablinks" onclick="openCity(event, 'sh')">Selvas Húmedas</button>
+			<button class="tablinks" onclick="openCity(event, 'd')">Desiertos y Matorrales</button>
+	  </div>
+		
+	<div id="bt" class="tabcontent" >
+		  
+			  <h3>Bosques Templados</h3>
+		  <p>Los bosques templados son comunidades dominadas por árboles altos, principalmente pinos y encinos, que se encuentran en zonas montañosas con clima templado a frío. Son ecosistemas subhúmedos a templado húmedos, con una precipitación anual de entre 600 y 1,000 mm. En México, los bosques templados cubren aproximadamente el 16% del territorio nacional. Se distribuyen principalmente en las zonas altas de las Sierras Madre Occidental y Oriental, el Eje Neovolcánico, la Sierra Norte de Oaxaca y el sur de Chiapas.</p>
+		<div style="margin: auto">
+		  <a href="https://www.biodiversidad.gob.mx/ecosistemas/bosquetemplado" target="_blank"><img src="images/EyD_bosquesTemplados_2021.gif"   alt=""/></a>
+		</div>
+		<p>En bosques templados también habitan de gran variedad de insectos. En los bosques templados de oyamel del centro de México se encuentran los sitios de hibernación de la Mariposa monarca (Danaus plexippus). Algunas de las especies más sobresalientes de insectos son los escarabajos del género Plusiotis que habitan bosques húmedos, templados a fríos. También es refugio de numerosas aves migratorias como los chipes (Setophaga spp.), el Zumbador rojo (Selasphorus rufus) y el Colibrí garganta rubí (Archilochus colubris).</p>
+	 </div>
+
+	<div id="sh" class="tabcontent">
+		  <h3>Selvas Húmedas</h3>
+		  <p>Las selvas húmedas, también conocidas como selvas altas o bosques tropicales, son ecosistemas forestales caracterizados por altas temperaturas y humedad constante durante todo el año, con abundante vegetación y una gran diversidad de especies animales. En México, las selvas húmedas se encuentran principalmente en la vertiente del Golfo y Caribe, desde Tamaulipas hasta Quintana Roo y en parte de Chiapas. Son los ecosistemas con mayor exuberancia vegetal en el país, con árboles de más de 30 metros de altura, lianas, palmas, epífitas y plantas trepadoras.</p>
+			<a href="https://www.biodiversidad.gob.mx/ecosistemas/selvaHumeda" target="_blank"><img src="images/selvasHumedasP_2021.gif"   alt=""/></a>
+			<p>Las selvas han sido tradicionalmente fuente de maderas preciosas, leña y diversidad plantas y animales para la subsistencia de comunidades rurales e indígenas. Además son sustento de los procesos de funcionamiento de los ecosistemas incluyendo ciclo de nutrientes y agua, retención y formación de suelos, hábitat de biodiversidad, regulación del clima, erosión y eventos extremos, mantenimiento de la biodiversidad. También desempeñan un papel importante en la regulación de polinizadores, plagas y vectores de enfermedades. Así mismo, la producción de miel depende de múltiples especies de abejas nativas, europeas y africanizadas que visitan más de 100 especies de plantas de las selvas húmedas. </p>
+	</div>
+	
+	 <div id="d" class="tabcontent">
+		  <h3>Desiertos y Matorrales</h3>
+		  <p>México cuenta con una amplia variedad de desiertos, destacando el Desierto de Chihuahua, el más grande de Norteamérica, y el Desierto de Sonora, uno de los más calurosos y extensos del mundo. Otros desiertos importantes incluyen el Desierto de Baja California, el Desierto de Altar y el Desierto de Cuatrociénegas. El Desierto de Chihuahua abarca más de 600,000 km² y se extiende desde el suroeste de los Estados Unidos hasta las tierras altas del centro de México. Se caracteriza por su clima variable, con temperaturas que pueden superar los 40°C durante el día y descender significativamente en la noche o en invierno. En este desierto se encuentran las Dunas de Salamayuca, un Área de Protección de Flora y Fauna con actividades turísticas como el snow, recorridos en vehículos todoterreno y alojamiento en cabañas. El Desierto de Sonora, por su parte, se encuentra en el noroeste de México y se extiende hasta parte de Sinaloa. Es conocido por su clima cálido y por ser uno de los desiertos más calurosos del mundo.  </p>
+		<p>En México, los matorrales son ecosistemas dominados por arbustos de altura inferior a 4 metros, caracterizados por ser comunes en regiones áridas y semiáridas con lluvias escasas. Son el ecosistema más extenso del país, cubriendo alrededor del 30% del territorio nacional, y albergan una gran diversidad de plantas y animales adaptados a condiciones secas. </p>
+			<div class="col-sm-12 col-md-">
+		  <a href="https://www.biodiversidad.gob.mx/ecosistemas/matorral" target="_blank"><img src="images/EyD_matorralesP_2021.gif"  alt=""/></a>
+			 </div>
+		 <p>En los desiertos mexicanos, los polinizadores desempeñan un papel crucial en la reproducción de las plantas. Estos incluyen una variedad de insectos, aves y mamíferos, como abejas, mariposas, murciélagos y colibríes, que se alimentan del néctar y el polen, transportándolo de una flor a otra. </p>
+		
+	</div>
+		</section>
+	</div>
+	</div>
+	
+			<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+	// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();			
+					
+</script>
+	  
+	  
+	  <div style="height: 30px;"></div>
+		
+	   
+	<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+		<section>
+		<p>.</p>
+		<h3>Galería de polinizadores en diferentes entornos naturales</h3>
+		<p>En México, se estima que existen 2,405 especies de polinizadores, incluyendo insectos como abejas (2,128), mariposas y polillas (202), así como vertebrados como colibríes y murciélagos. Adicionalmente, se han identificado más de 6,000 especies de abejas, avispas y hormigas, 57 especies de colibríes, y una docena de especies de murciélagos que también desempeñan un papel importante en la polinización, según la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO).</p>
+		  </section>
+			
+		  <section>
+<div class="scroll-container">
+  <img src="images/bt.jpg" alt="Cinque Terre" width="600" height="400" >
+  <img src="images/abe bt.jpg" alt="Forest" width="600" height="400" >
+  <img src="images/RBMariposaMonarca.jpg" alt="Northern Lights" width="600" height="400" >
+  <img src="images/Colibri-1.jpg" alt="Mountains" width="600" height="400" >
+	
+	<img src="images/sh.jpg" alt="Cinque Terre" width="600" height="400" >
+  <img src="images/quetz.jpg" alt="Forest" width="600" height="400" >
+  <img src="images/murci.jpg" alt="Northern Lights" width="600" height="400" >
+  <img src="images/mono.jpg" alt="Mountains" width="600" height="400" >
+	
+	<img src="images/desierto.webp" alt="Cinque Terre" width="600" height="400" >
+  <img src="images/murci ca.jpeg" alt="Forest" width="600" height="400" >
+  <img src="images/hormi.jpg" alt="Northern Lights" width="600" height="400" >
+  <img src="images/abe desert.jpg" alt="Mountains" width="600" height="400" >
+</div>
+
+<p><i>Fuente:Ecosistemas Mexicanos, aspariegos.com, Biodiversidad Mexicana, Gobierno de México, Ecosistemas Mexicanos, Gaceta UNAM, Unidad-1-Tic Blog, AD México y Latinoamérica, CABI Digital Library, World Wildlife Found.</i></p>
+		  </section>
+		
+	  </div>
+	  
+	  <div class="col-sm-8 col-md-4 col-lg-4 col-xl-4" style="margin: auto">
+	  <section>
+		  <a href="index.html" class="previous">&laquo; Inicio</a>
+<a href="entorno2.html" class="next">Urbano &raquo;</a>
+		  </section>
+	  </div>
+	  
+	</main>
+	<br>
+	
+  <footer>
+    <a href="index.html" target="_blank"><img src="images/bougainvillea (1).png" alt="Logo" /></a>
+	   <a href="https://www.youtube.com/@biodiversidadmexico" target="_blank"><img src="https://img.icons8.com/ios-filled/50/youtube-play.png"   alt="youtube"/></a>
+   	   <a href="https://www.facebook.com/Semarnatmx" target="_blank"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png"   alt="Facebook"/></a>
+	   <a href="https://www.instagram.com/refugio.bees/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/instagram-new.png"   alt="Instagram"/></a>
+
+  </footer>
+
+  </body>
+</html>

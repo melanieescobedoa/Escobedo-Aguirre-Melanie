@@ -1,62 +1,251 @@
-<html lang="en">
-    <head>
-        <title>Practicas de html</title>
-        <link rel="stylesheet" href="INTERFAZ/css/styleeee.css" type="text/css">
-        
-        <style type="text/css">
-           
-        display: 
-            }
-            footer{
-               text-align: center; 
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            #pp{
-                width: 50px;
-                padding: 10px;
-                margin-right: 50%;
-                margin-left: 50%;
-            }
-            h2{
-               font-size: 35px;
-            }
-            p{
-                margin-top: 2px;
-            }
+<html>
+<head>
+<meta charset="utf-8">
+<title>AVES</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	   	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Diseño de Interfaz Graficas de Usuario</h1>
-            <a href="index.html"><img id="pp" src="INTERFAZ/imagenes/pagina-principal%20(1).png"> </a>
-        </header>
-        <nav>
-         <ul>
-            <li><a href="INTERFAZ/html/mi_primera_pagina.html">Formatos</a></li>
-                <li><a href="INTERFAZ/html/listas.html">Listas</a></li>
-                <li><a href="INTERFAZ/html/ENLACE.html">Enlaces</a></li>
-                <li><a href="INTERFAZ/html/TABLAS.html">Tablas</a></li>
-                <li><a href="INTERFAZ/html/IMAGENES.html">Imagenes</a></li>
-                <li><a href="INTERFAZ/html/AUDIO.html">Auidio</a></li>
-                <li><a href="INTERFAZ/html/VIDEO.html">Video</a></li>
-                <li><a href="INTERFAZ/html/FORMULARIO.html">Formularios</a></li>
-         </ul> 
-        </nav>
-        <main>
-            <section>
-                <h2>Melanie Escobedo Aguirre</h2>
-                <p><img class="yo" src="INTERFAZ/imagenes/yo.jpg" alt="foto-perfil">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore dolor veniam inventore perspiciatis harum illo fugit vel! Natus velit, cumque iusto sint nulla eius dicta, voluptas inventore nisi rem ipsam optio mollitia suscipit aliquam est. Non, sequi, animi. Atque sit dolore sint quos, blanditiis expedita illum, autem ad cupiditate voluptas, vitae. Eius quidem molestiae in rem quas quos temporibus voluptates quam impedit aut omnis magnam, maxime numquam, assumenda delectus accusamus expedita voluptatibus autem asperiores quibusdam odit facilis id. Dolor, ab hic, optio ipsam vel nemo repellendus veritatis ratione architecto, harum suscipit. Facere fuga quae, praesentium, reiciendis quam sunt rem similique.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa, ab, similique eaque ullam fugiat dignissimos nulla id nemo. Sunt quia, odit porro, id qui ad quo nobis eum perferendis deserunt et facere, quas. Quaerat, id, est quam molestiae natus odit a. Inventore ut vitae excepturi illum repellat a delectus dolor consectetur modi commodi obcaecati placeat similique itaque repellendus ullam provident minima tenetur, temporibus recusandae molestiae, doloremque libero.</p>
-            </section>
-         </main>
-        <footer>
-            <a href="https://www.instagram.com/mel_miel_83?igsh=MWVxd3NqOHZtbGd4cA==" target="_blank"><img class="icono" src="INTERFAZ/imagenes/instagram.png"></a>
-            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"><img class="icono" src="INTERFAZ/imagenes/gmail.png"></a>
-            <a href="https://www.facebook.com/share/1EocXt7exU/" target="_blank"><img class="icono" src="INTERFAZ/imagenes/facebook.png"> </a>
-        </footer>
-        
-    </body>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENTORNO</title>
+	
+	<style>
+* {box-sizing: border-box}
+body {
+       margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 40; /* Regular por defecto */
+    }
+		.titulo {
+  font-family: 'Playfair Display', serif;
+			
+}
+		 h1 {
+      font-weight: 30; /* Poppins Bold */
+      font-size: 3vw;    /* Responsive font size */
+      text-align: center;
+			  margin-top: 2rem;
+    }
+    }
+		  h2 {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+		.subti{
+		font-family: 'Dancing Script', cursive;	
+			 font-weight: 30; /* Poppins Bold */
+      font-size: 3vw;    /* Responsive font size */
+			  margin-top: 2rem;
+		}
+  p {
+      font-size: 1rem;
+      margin: 1rem 2rem;
+      line-height: 1.6;
+    }
+	 @media (max-width: 600px) {
+      h1 {
+        font-size: 8vw;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 60px;
+      }
+    }	
+ header {
+      background-color: #FCE04E;
+        text-align: center;
+      padding: 10px 30px;
+      font-weight: bold;
+	   display: flex;
+      align-items: center;     
+      gap: 26px;              
+      font-size: 24px;
+	  width: 100%;
+      justify-content: center; 
+    }
+    header img {
+		height: 30px;}
+
+    /* Línea vertical separadora */
+    .separador {
+      border-left: 2px solid #333;
+      height: 1em;             
+    }
+	
+		  nav {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+        margin-top: 10px;
+			
+    }
+    nav a {
+      background-color: #A4DAD4;
+      color: black;
+      font-weight: bold;
+      padding: 10px 25px;
+      margin: 0 10px;
+      border-radius: 15px;
+      text-decoration: none;
+    }
+	
+		
+		 footer {
+      background-color: #A4DAD4;
+      text-align: center;
+      padding: 20px 10px;
+		margin-top: 50px;	 
+    }
+    footer img {
+      height: 25px;
+      margin: 0 10px;
+      vertical-align: middle;
+		}
+		
+		.section{
+			margin top: 25px;
+			background-color: white;
+			height: auto;
+			padding-top: 5px;
+			padding-bottom: 25px;
+			margin-bottom: 25px;
+		}
+		.yo{
+                width: 40%;
+                margin-left: 10px;
+                margin-top: 0;
+                margin-bottom: 20px;
+     			border-radius: 50%;
+				width: 300px;              
+ 				 height: 300px;
+				text-align: center; 
+ 				 align-items: center;
+  				float: left;  
+				 shape-outside: circle(); 
+				  clip-path: circle();    
+				  width: 150px;
+				  height: 150px;
+				  margin: -40px 20px 10px 0;
+ 				 margin-right: 125px;   
+ 				 width: 300px;
+}
+		.yo2{
+                width: 40%;
+                margin-right: 10px;
+                margin-top: 0;
+                margin-bottom: 10px;
+     			border-radius: 50%;
+				width: 300px;              
+ 				 height: 300px;
+				text-align: center; 
+ 				 align-items: center;
+  				float: right;  
+				 shape-outside: circle(); 
+				  clip-path: circle();    
+				  width: 250px;
+				  height: 250px;
+				  margin: -135px 10px 10px 10;
+ 				 margin-left: 185px;   
+ 				 width: 250px;
+}
+           
+		.bloquea{
+		      background-color: #A4DAD4;
+			margin-top: 50px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		.contenedor-imagenes {
+  display: flex;
+  justify-content: center;    
+  gap: 100px;                  
+  flex-wrap: wrap;             
+  padding: 20px;
+}
+
+.imagen-redonda {
+  width: 200px;              
+  height: 200px;
+  border-radius: 50%;       
+  object-fit: cover;          
+  max-width: 100%;             
+  transition: transform 0.3s;  
+}
+
+.imagen-redonda:hover {
+  transform: scale(1.5);      
+}
+
+    </style>
+</head>
+ <body>
+	 <header> 
+    <img src="images/bougainvillea (1).png" alt="Logo" class="logo">
+      <div class="separador"></div> 
+		 POLINIZADORES Y SU IMPORTANCIA EN LA NATURALEZA
+  </header>
+		 
+  <nav>
+    <a href="especies.html">ESPECIES</a>
+    <a href="entorno.html">ENTORNO</a>
+    <a href="Retos.html">RETOS</a>
+</nav>
+	 <br>
+	 <br>
+	 <br>
+	  	<main>
+			
+		
+   <section class="section">
+	   	<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+  <img class="yo" src="images/abeja.webp" width="50%" alt="imagen libelula">
+  <span class="texto">Los polinizadores son fundamentales para la reproducción de las plantas, la biodiversidad y la producción de alimentos. Sin ellos, muchos ecosistemas colapsarían, afectando la vida silvestre y la agricultura.<i>(Fuente imagen:Wiki Index / Fandom)</i></span>
+	</div> 		
+   </section>
+			<br>
+			
+			<section class="bloquea">
+				
+				<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+					<div style="text-align: center"><h2 class="subti">Juega un rato con...</h2>
+					</div>
+					
+					<div class="contenedor-imagenes">
+					<a href="https://poki.com/es/g/beecoins-inc" target="_blank"><img class="imagen-redonda" src="images/poli.jpg" width="50%"  alt=""/></a>
+					<a href="https://mobbyt.com/videojuego/educativo/play.php?Id=330036" target="_blank"><img class="imagen-redonda" src="images/geo.jpg" width="50%"  alt=""/></a>
+					<a href="https://polinizadoresdecanarias.org/juegos/#JUGAR" target="_blank"><img class="imagen-redonda" src="images/manu.jpg"  width="50%" alt=""/></a>
+				</div>
+				</div>
+			</section>
+			<br>
+			<section class="section">
+				<div class="col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin: auto">
+         
+		<h2 class="subti">Sabías que...?</h2>	
+					<br>
+  <img class="yo2" src="images/abeja revelion.webp"  alt="imagen abeja">
+				
+  <span class="texto">Cuando una abeja encuentra flores con néctar, hace un "baile de meneo" (waggle dance) para indicar a sus compañeras la dirección y distancia. ¡Es como su propio TikTok de supervivencia!. <i>(Fuente imagen:Wiki Index / Fandom)</i></span>
+	</div>				
+   </section>
+			
+   <br>
+
+  <footer>
+	  <div style="text-align: center">
+    <a href="index.html" target="_blank"><img src="images/bougainvillea (1).png" alt="Logo" /></a>
+	   <a href="https://www.youtube.com/@biodiversidadmexico" target="_blank"><img src="https://img.icons8.com/ios-filled/50/youtube-play.png"   alt="youtube"/></a>
+   	   <a href="https://www.facebook.com/Semarnatmx" target="_blank"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png"   alt="Facebook"/></a>
+	   <a href="https://www.instagram.com/refugio.bees/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/instagram-new.png"   alt="Instagram"/></a>
+	</div>
+  </footer>
+
+</body>
 </html>
